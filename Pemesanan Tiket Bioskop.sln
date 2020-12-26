@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.30503.244
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{F184B08F-C81C-45F6-A57F-5ABD9991F28F}") = "Pemesanan Tiket Bioskop", "Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop.vbproj", "{54AFBE27-C0D0-4648-B899-909F2A8BAE1B}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{54AFBE27-C0D0-4648-B899-909F2A8BAE1B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{54AFBE27-C0D0-4648-B899-909F2A8BAE1B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{54AFBE27-C0D0-4648-B899-909F2A8BAE1B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{54AFBE27-C0D0-4648-B899-909F2A8BAE1B}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {CE665EEB-87D2-4B58-986C-7A424699E4C5}
+	EndGlobalSection
+EndGlobal

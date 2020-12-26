@@ -1,0 +1,24 @@
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.vbprojAssemblyReference.cache
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Form1.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Resources.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.vbproj.GenerateResource.cache
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.vbproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\Pemesanan Tiket Bioskop.exe.config
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\Pemesanan Tiket Bioskop.exe
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\Pemesanan Tiket Bioskop.pdb
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\Pemesanan Tiket Bioskop.xml
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.exe
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.xml
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.pdb
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Form2.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Form3.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Form4.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\MySql.Data.DLL
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\Renci.SshNet.dll
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\bin\Debug\BouncyCastle.Crypto.dll
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan Tiket Bioskop.vbproj.CopyComplete
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Form5.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.LoginForm1.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.Tambahfilm.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.FormAdmin.resources
+C:\Users\User\source\repos\Pemesanan Tiket Bioskop\Pemesanan Tiket Bioskop\obj\Debug\Pemesanan_Tiket_Bioskop.TambahStudio.resources
