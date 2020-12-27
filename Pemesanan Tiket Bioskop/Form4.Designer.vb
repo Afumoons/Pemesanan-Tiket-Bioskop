@@ -43,6 +43,7 @@ Partial Class Form4
         Me.HTotal = New System.Windows.Forms.Label()
         Me.Button1 = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
+        Me.KodeTiket = New System.Windows.Forms.TextBox()
         Me.SuspendLayout()
         '
         'Judul
@@ -235,11 +236,20 @@ Partial Class Form4
         Me.Button2.Text = "Back"
         Me.Button2.UseVisualStyleBackColor = True
         '
+        'KodeTiket
+        '
+        Me.KodeTiket.Location = New System.Drawing.Point(12, 59)
+        Me.KodeTiket.Name = "KodeTiket"
+        Me.KodeTiket.Size = New System.Drawing.Size(100, 20)
+        Me.KodeTiket.TabIndex = 32
+        Me.KodeTiket.Visible = False
+        '
         'Form4
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(241, 428)
+        Me.Controls.Add(Me.KodeTiket)
         Me.Controls.Add(Me.Button2)
         Me.Controls.Add(Me.Button1)
         Me.Controls.Add(Me.HTotal)
@@ -289,4 +299,5 @@ Partial Class Form4
     Friend WithEvents HTotal As Label
     Friend WithEvents Button1 As Button
     Friend WithEvents Button2 As Button
+    Friend WithEvents KodeTiket As TextBox
 End Class

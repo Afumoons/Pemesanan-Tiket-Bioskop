@@ -44,8 +44,6 @@ Partial Class Tambahfilm
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Label11 = New System.Windows.Forms.Label()
-        Me.Label12 = New System.Windows.Forms.Label()
-        Me.TxtHargaT = New System.Windows.Forms.TextBox()
         Me.BtnSimpan = New System.Windows.Forms.Button()
         Me.OpenFileDialog1 = New System.Windows.Forms.OpenFileDialog()
         Me.BtnBrowse = New System.Windows.Forms.Button()
@@ -230,22 +228,6 @@ Partial Class Tambahfilm
         Me.Label11.TabIndex = 21
         Me.Label11.Text = "Batas Usia Film"
         '
-        'Label12
-        '
-        Me.Label12.AutoSize = True
-        Me.Label12.Location = New System.Drawing.Point(118, 301)
-        Me.Label12.Name = "Label12"
-        Me.Label12.Size = New System.Drawing.Size(84, 13)
-        Me.Label12.TabIndex = 22
-        Me.Label12.Text = "Harga Tiket Film"
-        '
-        'TxtHargaT
-        '
-        Me.TxtHargaT.Location = New System.Drawing.Point(12, 298)
-        Me.TxtHargaT.Name = "TxtHargaT"
-        Me.TxtHargaT.Size = New System.Drawing.Size(100, 20)
-        Me.TxtHargaT.TabIndex = 23
-        '
         'BtnSimpan
         '
         Me.BtnSimpan.Location = New System.Drawing.Point(432, 9)
@@ -285,8 +267,6 @@ Partial Class Tambahfilm
         Me.Controls.Add(Me.PictureBox1)
         Me.Controls.Add(Me.BtnBrowse)
         Me.Controls.Add(Me.BtnSimpan)
-        Me.Controls.Add(Me.TxtHargaT)
-        Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
@@ -339,8 +319,6 @@ Partial Class Tambahfilm
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Label11 As Label
-    Friend WithEvents Label12 As Label
-    Friend WithEvents TxtHargaT As TextBox
     Friend WithEvents BtnSimpan As Button
     Friend WithEvents OpenFileDialog1 As OpenFileDialog
     Friend WithEvents BtnBrowse As Button

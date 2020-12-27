@@ -23,6 +23,7 @@ Public Class Tambahfilm
     End Sub
 
     Private Sub BtnBrowse_Click(sender As Object, e As EventArgs) Handles BtnBrowse.Click
+        MessageBox.Show("Pilih file di bawah 1MB", "Informasi", MessageBoxButtons.OK, MessageBoxIcon.Information)
         Try
             With OpenFileDialog1
                 .CheckFileExists = True                                             'CHECK THE SELECTED FILE IF IT EXIST OTHERWISE THE DIALOG BOX WILL DISPLAY A WARNING.
@@ -59,7 +60,7 @@ Public Class Tambahfilm
         FileSize = mstream.Length
         mstream.Close()                                                                 'CLOSES THE CURRENT STREAM AND RELEASE ANY RESOURCES ASSOCIATED WITH THE CURRENT STREAM
         Try
-            sql = "INSERT INTO  `film` VALUES (@ID, @Judul, @Genre, @Produsen, @Sutradara, @Penulis, @Produksi, @Cast, @Sinopsis, @Trailer, @BatasU, @HargaT, @ImageFile)"
+            sql = "INSERT INTO  `film` VALUES (@ID, @Judul, @Genre, @Produsen, @Sutradara, @Penulis, @Produksi, @Cast, @Sinopsis, @Trailer, @BatasU, @ImageFile)"
             cmd = New MySqlCommand
             With cmd
                 .Connection = conn
@@ -76,7 +77,6 @@ Public Class Tambahfilm
                 .Parameters.AddWithValue("@Sinopsis", TxtSinopsis.Text)
                 .Parameters.AddWithValue("@Trailer", TxtTrailer.Text)
                 .Parameters.AddWithValue("@BatasU", TxtBatasU.Text)
-                .Parameters.AddWithValue("@HargaT", TxtHargaT.Text)
                 .Parameters.AddWithValue("@ImageFile", arrImage)
                 result = .ExecuteNonQuery()
             End With

@@ -77,8 +77,8 @@ Partial Class Form3
         Me.Label3 = New System.Windows.Forms.Label()
         Me.Total_Harga = New System.Windows.Forms.Label()
         Me.Jumlah_Tiket = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
-        Me.Button2 = New System.Windows.Forms.Button()
+        Me.BtnBack = New System.Windows.Forms.Button()
+        Me.BtnNext = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'A5
@@ -622,31 +622,31 @@ Partial Class Form3
         Me.Jumlah_Tiket.TabIndex = 57
         Me.Jumlah_Tiket.Text = "-"
         '
-        'Button1
+        'BtnBack
         '
-        Me.Button1.Location = New System.Drawing.Point(7, 282)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 58
-        Me.Button1.Text = "Back"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnBack.Location = New System.Drawing.Point(7, 282)
+        Me.BtnBack.Name = "BtnBack"
+        Me.BtnBack.Size = New System.Drawing.Size(75, 23)
+        Me.BtnBack.TabIndex = 58
+        Me.BtnBack.Text = "Back"
+        Me.BtnBack.UseVisualStyleBackColor = True
         '
-        'Button2
+        'BtnNext
         '
-        Me.Button2.Location = New System.Drawing.Point(572, 282)
-        Me.Button2.Name = "Button2"
-        Me.Button2.Size = New System.Drawing.Size(75, 23)
-        Me.Button2.TabIndex = 59
-        Me.Button2.Text = "Next"
-        Me.Button2.UseVisualStyleBackColor = True
+        Me.BtnNext.Location = New System.Drawing.Point(572, 282)
+        Me.BtnNext.Name = "BtnNext"
+        Me.BtnNext.Size = New System.Drawing.Size(75, 23)
+        Me.BtnNext.TabIndex = 59
+        Me.BtnNext.Text = "Next"
+        Me.BtnNext.UseVisualStyleBackColor = True
         '
         'Form3
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
-        Me.ClientSize = New System.Drawing.Size(659, 317)
-        Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.ClientSize = New System.Drawing.Size(686, 317)
+        Me.Controls.Add(Me.BtnNext)
+        Me.Controls.Add(Me.BtnBack)
         Me.Controls.Add(Me.Jumlah_Tiket)
         Me.Controls.Add(Me.Total_Harga)
         Me.Controls.Add(Me.Label3)
@@ -764,6 +764,6 @@ Partial Class Form3
     Friend WithEvents Label3 As Label
     Friend WithEvents Total_Harga As Label
     Friend WithEvents Jumlah_Tiket As Label
-    Friend WithEvents Button1 As Button
-    Friend WithEvents Button2 As Button
+    Friend WithEvents BtnBack As Button
+    Friend WithEvents BtnNext As Button
 End Class

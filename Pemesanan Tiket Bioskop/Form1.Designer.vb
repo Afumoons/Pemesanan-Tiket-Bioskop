@@ -25,9 +25,6 @@ Partial Class Form1
         Me.components = New System.ComponentModel.Container()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
         Me.Timer1 = New System.Windows.Forms.Timer(Me.components)
-        Me.Poster1 = New System.Windows.Forms.PictureBox()
-        Me.Poster2 = New System.Windows.Forms.PictureBox()
-        Me.Poster3 = New System.Windows.Forms.PictureBox()
         Me.Judul = New System.Windows.Forms.Label()
         Me.Produsen = New System.Windows.Forms.Label()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -44,10 +41,12 @@ Partial Class Form1
         Me.Casts = New System.Windows.Forms.Label()
         Me.Sinopsis = New System.Windows.Forms.Label()
         Me.Pesan = New System.Windows.Forms.Button()
+        Me.TxtJudul = New System.Windows.Forms.TextBox()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.Panel1 = New System.Windows.Forms.Panel()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Poster1, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Poster2, System.ComponentModel.ISupportInitialize).BeginInit()
-        CType(Me.Poster3, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'PictureBox1
@@ -62,36 +61,6 @@ Partial Class Form1
         'Timer1
         '
         Me.Timer1.Interval = 5000
-        '
-        'Poster1
-        '
-        Me.Poster1.Image = Global.Pemesanan_Tiket_Bioskop.My.Resources.Resources.Poster1
-        Me.Poster1.Location = New System.Drawing.Point(55, 338)
-        Me.Poster1.Name = "Poster1"
-        Me.Poster1.Size = New System.Drawing.Size(127, 185)
-        Me.Poster1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Poster1.TabIndex = 1
-        Me.Poster1.TabStop = False
-        '
-        'Poster2
-        '
-        Me.Poster2.Image = Global.Pemesanan_Tiket_Bioskop.My.Resources.Resources.Poster2
-        Me.Poster2.Location = New System.Drawing.Point(239, 338)
-        Me.Poster2.Name = "Poster2"
-        Me.Poster2.Size = New System.Drawing.Size(127, 185)
-        Me.Poster2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Poster2.TabIndex = 3
-        Me.Poster2.TabStop = False
-        '
-        'Poster3
-        '
-        Me.Poster3.Image = Global.Pemesanan_Tiket_Bioskop.My.Resources.Resources.Poster3
-        Me.Poster3.Location = New System.Drawing.Point(420, 338)
-        Me.Poster3.Name = "Poster3"
-        Me.Poster3.Size = New System.Drawing.Size(127, 185)
-        Me.Poster3.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage
-        Me.Poster3.TabIndex = 4
-        Me.Poster3.TabStop = False
         '
         'Judul
         '
@@ -229,12 +198,47 @@ Partial Class Form1
         '
         'Pesan
         '
-        Me.Pesan.Location = New System.Drawing.Point(321, 274)
+        Me.Pesan.Location = New System.Drawing.Point(367, 274)
         Me.Pesan.Name = "Pesan"
         Me.Pesan.Size = New System.Drawing.Size(130, 42)
         Me.Pesan.TabIndex = 22
         Me.Pesan.Text = "PESAN TIKET"
         Me.Pesan.UseVisualStyleBackColor = True
+        '
+        'TxtJudul
+        '
+        Me.TxtJudul.Location = New System.Drawing.Point(209, 274)
+        Me.TxtJudul.Name = "TxtJudul"
+        Me.TxtJudul.ReadOnly = True
+        Me.TxtJudul.Size = New System.Drawing.Size(100, 20)
+        Me.TxtJudul.TabIndex = 23
+        Me.TxtJudul.Text = "Pilih Film"
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1})
+        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(288, 183)
+        Me.ListView1.TabIndex = 24
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Judul Film"
+        Me.ColumnHeader1.Width = 300
+        '
+        'Panel1
+        '
+        Me.Panel1.Controls.Add(Me.ListView1)
+        Me.Panel1.Location = New System.Drawing.Point(209, 300)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(288, 183)
+        Me.Panel1.TabIndex = 25
+        Me.Panel1.Visible = False
         '
         'Form1
         '
@@ -242,6 +246,8 @@ Partial Class Form1
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None
         Me.ClientSize = New System.Drawing.Size(599, 535)
+        Me.Controls.Add(Me.Panel1)
+        Me.Controls.Add(Me.TxtJudul)
         Me.Controls.Add(Me.Pesan)
         Me.Controls.Add(Me.Sinopsis)
         Me.Controls.Add(Me.Casts)
@@ -258,17 +264,12 @@ Partial Class Form1
         Me.Controls.Add(Me.Label1)
         Me.Controls.Add(Me.Produsen)
         Me.Controls.Add(Me.Judul)
-        Me.Controls.Add(Me.Poster3)
-        Me.Controls.Add(Me.Poster2)
-        Me.Controls.Add(Me.Poster1)
         Me.Controls.Add(Me.PictureBox1)
         Me.Name = "Form1"
         Me.RightToLeft = System.Windows.Forms.RightToLeft.No
         Me.Text = "Now Playing"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Poster1, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Poster2, System.ComponentModel.ISupportInitialize).EndInit()
-        CType(Me.Poster3, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -276,9 +277,6 @@ Partial Class Form1
 
     Friend WithEvents PictureBox1 As PictureBox
     Friend WithEvents Timer1 As Timer
-    Friend WithEvents Poster1 As PictureBox
-    Friend WithEvents Poster2 As PictureBox
-    Friend WithEvents Poster3 As PictureBox
     Friend WithEvents Judul As Label
     Friend WithEvents Produsen As Label
     Friend WithEvents Label1 As Label
@@ -295,4 +293,8 @@ Partial Class Form1
     Friend WithEvents Casts As Label
     Friend WithEvents Sinopsis As Label
     Friend WithEvents Pesan As Button
+    Friend WithEvents TxtJudul As TextBox
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents Panel1 As Panel
 End Class

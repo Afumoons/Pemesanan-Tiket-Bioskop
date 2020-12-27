@@ -38,13 +38,12 @@ Partial Class Form2
         Me.Produsen = New System.Windows.Forms.Label()
         Me.Judul = New System.Windows.Forms.Label()
         Me.PictureBox1 = New System.Windows.Forms.PictureBox()
-        Me.ComboBox1 = New System.Windows.Forms.ComboBox()
         Me.ComboBox2 = New System.Windows.Forms.ComboBox()
         Me.Label8 = New System.Windows.Forms.Label()
         Me.Label9 = New System.Windows.Forms.Label()
         Me.Label10 = New System.Windows.Forms.Label()
         Me.Alamat_Studio = New System.Windows.Forms.Label()
-        Me.Button1 = New System.Windows.Forms.Button()
+        Me.BtnNext = New System.Windows.Forms.Button()
         Me.Button2 = New System.Windows.Forms.Button()
         Me.Label11 = New System.Windows.Forms.Label()
         Me.Label12 = New System.Windows.Forms.Label()
@@ -52,8 +51,13 @@ Partial Class Form2
         Me.Label14 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
-        Me.ComboBox3 = New System.Windows.Forms.ComboBox()
+        Me.Panel1 = New System.Windows.Forms.Panel()
+        Me.ListView1 = New System.Windows.Forms.ListView()
+        Me.ColumnHeader1 = CType(New System.Windows.Forms.ColumnHeader(), System.Windows.Forms.ColumnHeader)
+        Me.TxtPilihStudio = New System.Windows.Forms.TextBox()
+        Me.DateTimePicker1 = New System.Windows.Forms.DateTimePicker()
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).BeginInit()
+        Me.Panel1.SuspendLayout()
         Me.SuspendLayout()
         '
         'Sinopsis
@@ -199,15 +203,6 @@ Partial Class Form2
         Me.PictureBox1.TabIndex = 21
         Me.PictureBox1.TabStop = False
         '
-        'ComboBox1
-        '
-        Me.ComboBox1.FormattingEnabled = True
-        Me.ComboBox1.Items.AddRange(New Object() {"Tunjungan 1 XXI", "Tunjungan 3 XXI", "Tunjungan 5 XXI"})
-        Me.ComboBox1.Location = New System.Drawing.Point(12, 368)
-        Me.ComboBox1.Name = "ComboBox1"
-        Me.ComboBox1.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox1.TabIndex = 37
-        '
         'ComboBox2
         '
         Me.ComboBox2.FormattingEnabled = True
@@ -251,14 +246,14 @@ Partial Class Form2
         Me.Alamat_Studio.Size = New System.Drawing.Size(238, 61)
         Me.Alamat_Studio.TabIndex = 42
         '
-        'Button1
+        'BtnNext
         '
-        Me.Button1.Location = New System.Drawing.Point(475, 493)
-        Me.Button1.Name = "Button1"
-        Me.Button1.Size = New System.Drawing.Size(75, 23)
-        Me.Button1.TabIndex = 43
-        Me.Button1.Text = "Next"
-        Me.Button1.UseVisualStyleBackColor = True
+        Me.BtnNext.Location = New System.Drawing.Point(475, 493)
+        Me.BtnNext.Name = "BtnNext"
+        Me.BtnNext.Size = New System.Drawing.Size(75, 23)
+        Me.BtnNext.TabIndex = 43
+        Me.BtnNext.Text = "Next"
+        Me.BtnNext.UseVisualStyleBackColor = True
         '
         'Button2
         '
@@ -301,18 +296,18 @@ Partial Class Form2
         Me.Label14.AutoSize = True
         Me.Label14.Location = New System.Drawing.Point(472, 371)
         Me.Label14.Name = "Label14"
-        Me.Label14.Size = New System.Drawing.Size(62, 13)
+        Me.Label14.Size = New System.Drawing.Size(32, 13)
         Me.Label14.TabIndex = 48
-        Me.Label14.Text = "IDR 30.000"
+        Me.Label14.Text = "IDR -"
         '
         'Label15
         '
         Me.Label15.AutoSize = True
         Me.Label15.Location = New System.Drawing.Point(472, 392)
         Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(62, 13)
+        Me.Label15.Size = New System.Drawing.Size(32, 13)
         Me.Label15.TabIndex = 49
-        Me.Label15.Text = "IDR 45.000"
+        Me.Label15.Text = "IDR -"
         '
         'Label16
         '
@@ -323,21 +318,56 @@ Partial Class Form2
         Me.Label16.TabIndex = 50
         Me.Label16.Text = "Hari"
         '
-        'ComboBox3
+        'Panel1
         '
-        Me.ComboBox3.FormattingEnabled = True
-        Me.ComboBox3.Items.AddRange(New Object() {"Senin", "Selasa", "Rabu", "Kamis", "Jumat", "Sabtu", "Minggu"})
-        Me.ComboBox3.Location = New System.Drawing.Point(12, 448)
-        Me.ComboBox3.Name = "ComboBox3"
-        Me.ComboBox3.Size = New System.Drawing.Size(121, 21)
-        Me.ComboBox3.TabIndex = 51
+        Me.Panel1.Controls.Add(Me.ListView1)
+        Me.Panel1.Location = New System.Drawing.Point(12, 397)
+        Me.Panel1.Name = "Panel1"
+        Me.Panel1.Size = New System.Drawing.Size(200, 100)
+        Me.Panel1.TabIndex = 52
+        Me.Panel1.Visible = False
+        '
+        'ListView1
+        '
+        Me.ListView1.Columns.AddRange(New System.Windows.Forms.ColumnHeader() {Me.ColumnHeader1})
+        Me.ListView1.Dock = System.Windows.Forms.DockStyle.Fill
+        Me.ListView1.HideSelection = False
+        Me.ListView1.Location = New System.Drawing.Point(0, 0)
+        Me.ListView1.Name = "ListView1"
+        Me.ListView1.Size = New System.Drawing.Size(200, 100)
+        Me.ListView1.TabIndex = 0
+        Me.ListView1.UseCompatibleStateImageBehavior = False
+        Me.ListView1.View = System.Windows.Forms.View.Details
+        '
+        'ColumnHeader1
+        '
+        Me.ColumnHeader1.Text = "Nama Studio"
+        Me.ColumnHeader1.Width = 300
+        '
+        'TxtPilihStudio
+        '
+        Me.TxtPilihStudio.Location = New System.Drawing.Point(12, 371)
+        Me.TxtPilihStudio.Name = "TxtPilihStudio"
+        Me.TxtPilihStudio.ReadOnly = True
+        Me.TxtPilihStudio.Size = New System.Drawing.Size(100, 20)
+        Me.TxtPilihStudio.TabIndex = 53
+        Me.TxtPilihStudio.Text = "Pilih Studio"
+        '
+        'DateTimePicker1
+        '
+        Me.DateTimePicker1.CustomFormat = "yyyy-MM-dd"
+        Me.DateTimePicker1.Location = New System.Drawing.Point(11, 448)
+        Me.DateTimePicker1.Name = "DateTimePicker1"
+        Me.DateTimePicker1.Size = New System.Drawing.Size(200, 20)
+        Me.DateTimePicker1.TabIndex = 54
         '
         'Form2
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(562, 528)
-        Me.Controls.Add(Me.ComboBox3)
+        Me.Controls.Add(Me.TxtPilihStudio)
+        Me.Controls.Add(Me.Panel1)
         Me.Controls.Add(Me.Label16)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.Label14)
@@ -345,13 +375,12 @@ Partial Class Form2
         Me.Controls.Add(Me.Label12)
         Me.Controls.Add(Me.Label11)
         Me.Controls.Add(Me.Button2)
-        Me.Controls.Add(Me.Button1)
+        Me.Controls.Add(Me.BtnNext)
         Me.Controls.Add(Me.Alamat_Studio)
         Me.Controls.Add(Me.Label10)
         Me.Controls.Add(Me.Label9)
         Me.Controls.Add(Me.Label8)
         Me.Controls.Add(Me.ComboBox2)
-        Me.Controls.Add(Me.ComboBox1)
         Me.Controls.Add(Me.Sinopsis)
         Me.Controls.Add(Me.Casts)
         Me.Controls.Add(Me.Produksi)
@@ -368,9 +397,11 @@ Partial Class Form2
         Me.Controls.Add(Me.Produsen)
         Me.Controls.Add(Me.Judul)
         Me.Controls.Add(Me.PictureBox1)
+        Me.Controls.Add(Me.DateTimePicker1)
         Me.Name = "Form2"
         Me.Text = "Pesan Tiket"
         CType(Me.PictureBox1, System.ComponentModel.ISupportInitialize).EndInit()
+        Me.Panel1.ResumeLayout(False)
         Me.ResumeLayout(False)
         Me.PerformLayout()
 
@@ -392,13 +423,12 @@ Partial Class Form2
     Friend WithEvents Produsen As Label
     Friend WithEvents Judul As Label
     Friend WithEvents PictureBox1 As PictureBox
-    Friend WithEvents ComboBox1 As ComboBox
     Friend WithEvents ComboBox2 As ComboBox
     Friend WithEvents Label8 As Label
     Friend WithEvents Label9 As Label
     Friend WithEvents Label10 As Label
     Friend WithEvents Alamat_Studio As Label
-    Friend WithEvents Button1 As Button
+    Friend WithEvents BtnNext As Button
     Friend WithEvents Button2 As Button
     Friend WithEvents Label11 As Label
     Friend WithEvents Label12 As Label
@@ -406,5 +436,9 @@ Partial Class Form2
     Friend WithEvents Label14 As Label
     Friend WithEvents Label15 As Label
     Friend WithEvents Label16 As Label
-    Friend WithEvents ComboBox3 As ComboBox
+    Friend WithEvents Panel1 As Panel
+    Friend WithEvents ListView1 As ListView
+    Friend WithEvents ColumnHeader1 As ColumnHeader
+    Friend WithEvents TxtPilihStudio As TextBox
+    Friend WithEvents DateTimePicker1 As DateTimePicker
 End Class

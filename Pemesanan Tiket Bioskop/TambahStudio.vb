@@ -26,7 +26,7 @@ Public Class TambahStudio
 
     Private Sub BtnSimpan_Click(sender As Object, e As EventArgs) Handles BtnSimpan.Click
         Try 'Menyimpan studio ke db
-            cmd = New MySqlCommand("insert into studio values('" & TxtKode.Text & "','" & TxtNama.Text & "')", conn)
+            cmd = New MySqlCommand("insert into studio values('" & TxtKode.Text & "','" & TxtNama.Text & "','" & TxtHargaT.Text & "','" & TxtAlamat.Text & "')", conn)
             cmd.ExecuteNonQuery()
             CloseConn("cmd")
             Try 'Setelah studio tersimpan, akan menginsert kursi ke db sesuai kode studio
