@@ -53,6 +53,7 @@ Partial Class Tambahfilm
         '
         'TxtKode
         '
+        Me.TxtKode.Enabled = False
         Me.TxtKode.Location = New System.Drawing.Point(12, 12)
         Me.TxtKode.Name = "TxtKode"
         Me.TxtKode.ReadOnly = True

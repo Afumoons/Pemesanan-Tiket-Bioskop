@@ -337,6 +337,567 @@ Public Class Form3
         Jumlah_Tiket.Text = JTiket
         Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
     End Sub
+
+    Private Sub C1_Click(sender As Object, e As EventArgs) Handles C1.Click
+        If Kursi(10) = True Then
+            C1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(10) = False
+            'status(1)
+        ElseIf kursi(10) = False Then
+            C1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(10) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub C2_Click(sender As Object, e As EventArgs) Handles C2.Click
+        If Kursi(11) = True Then
+            C2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(11) = False
+            'status(1)
+        ElseIf kursi(11) = False Then
+            C2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(11) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub C3_Click(sender As Object, e As EventArgs) Handles C3.Click
+        If Kursi(12) = True Then
+            C3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(12) = False
+            'status(1)
+        ElseIf kursi(12) = False Then
+            C3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(12) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub C4_Click(sender As Object, e As EventArgs) Handles C4.Click
+        If Kursi(13) = True Then
+            C4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(13) = False
+            'status(1)
+        ElseIf kursi(13) = False Then
+            C4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(13) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub C5_Click(sender As Object, e As EventArgs) Handles C5.Click
+        If Kursi(14) = True Then
+            C5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(14) = False
+            'status(1)
+        ElseIf kursi(14) = False Then
+            C5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(14) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub D1_Click(sender As Object, e As EventArgs) Handles D1.Click
+        If Kursi(15) = True Then
+            D1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(15) = False
+            'status(1)
+        ElseIf kursi(15) = False Then
+            D1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(15) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub D2_Click(sender As Object, e As EventArgs) Handles D2.Click
+        If Kursi(16) = True Then
+            D2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(16) = False
+            'status(1)
+        ElseIf kursi(16) = False Then
+            D2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(16) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub D3_Click(sender As Object, e As EventArgs) Handles D3.Click
+        If Kursi(17) = True Then
+            D3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(17) = False
+            'status(1)
+        ElseIf kursi(17) = False Then
+            D3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(17) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub D4_Click(sender As Object, e As EventArgs) Handles D4.Click
+        If Kursi(18) = True Then
+            D4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(18) = False
+            'status(1)
+        ElseIf kursi(18) = False Then
+            D4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(18) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub D5_Click(sender As Object, e As EventArgs) Handles D5.Click
+        If Kursi(19) = True Then
+            D5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(19) = False
+            'status(1)
+        ElseIf kursi(19) = False Then
+            D5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(19) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub E1_Click(sender As Object, e As EventArgs) Handles E1.Click
+        If Kursi(20) = True Then
+            E1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(20) = False
+            'status(1)
+        ElseIf kursi(20) = False Then
+            E1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(20) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub E2_Click(sender As Object, e As EventArgs) Handles E2.Click
+        If Kursi(21) = True Then
+            E2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(21) = False
+            'status(1)
+        ElseIf kursi(21) = False Then
+            E2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(21) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub E3_Click(sender As Object, e As EventArgs) Handles E3.Click
+        If Kursi(22) = True Then
+            E3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(22) = False
+            'status(1)
+        ElseIf kursi(22) = False Then
+            E3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(22) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub E4_Click(sender As Object, e As EventArgs) Handles E4.Click
+        If Kursi(23) = True Then
+            E4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(23) = False
+            'status(1)
+        ElseIf kursi(23) = False Then
+            E4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(23) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub E5_Click(sender As Object, e As EventArgs) Handles E5.Click
+        If Kursi(24) = True Then
+            E5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(24) = False
+            'status(1)
+        ElseIf kursi(24) = False Then
+            E5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(24) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub F1_Click(sender As Object, e As EventArgs) Handles F1.Click
+        If Kursi(25) = True Then
+            F1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(25) = False
+            'status(1)
+        ElseIf kursi(25) = False Then
+            F1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(25) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub F2_Click(sender As Object, e As EventArgs) Handles F2.Click
+        If Kursi(26) = True Then
+            F2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(26) = False
+            'status(1)
+        ElseIf kursi(26) = False Then
+            F2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(26) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub F3_Click(sender As Object, e As EventArgs) Handles F3.Click
+        If Kursi(27) = True Then
+            F3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(27) = False
+            'status(1)
+        ElseIf kursi(27) = False Then
+            F3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(27) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub F4_Click(sender As Object, e As EventArgs) Handles F4.Click
+        If Kursi(28) = True Then
+            F4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(28) = False
+            'status(1)
+        ElseIf kursi(28) = False Then
+            F4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(28) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub F5_Click(sender As Object, e As EventArgs) Handles F5.Click
+        If Kursi(29) = True Then
+            F5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(29) = False
+            'status(1)
+        ElseIf kursi(29) = False Then
+            F5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(29) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub G1_Click(sender As Object, e As EventArgs) Handles G1.Click
+        If Kursi(30) = True Then
+            G1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(30) = False
+            'status(1)
+        ElseIf kursi(30) = False Then
+            G1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(30) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub G2_Click(sender As Object, e As EventArgs) Handles G2.Click
+        If Kursi(31) = True Then
+            G2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(31) = False
+            'status(1)
+        ElseIf kursi(31) = False Then
+            G2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(31) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub G3_Click(sender As Object, e As EventArgs) Handles G3.Click
+        If Kursi(32) = True Then
+            G3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(32) = False
+            'status(1)
+        ElseIf kursi(32) = False Then
+            G3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(32) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub G4_Click(sender As Object, e As EventArgs) Handles G4.Click
+        If Kursi(33) = True Then
+            G4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(33) = False
+            'status(1)
+        ElseIf kursi(33) = False Then
+            G4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(33) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub G5_Click(sender As Object, e As EventArgs) Handles G5.Click
+        If Kursi(34) = True Then
+            G5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(34) = False
+            'status(1)
+        ElseIf kursi(34) = False Then
+            G5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(34) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub H1_Click(sender As Object, e As EventArgs) Handles H1.Click
+        If Kursi(35) = True Then
+            H1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(35) = False
+            'status(1)
+        ElseIf kursi(35) = False Then
+            H1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(35) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub H2_Click(sender As Object, e As EventArgs) Handles H2.Click
+        If Kursi(36) = True Then
+            H2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(36) = False
+            'status(1)
+        ElseIf kursi(36) = False Then
+            H2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(36) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub H3_Click(sender As Object, e As EventArgs) Handles H3.Click
+        If Kursi(37) = True Then
+            H3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(37) = False
+            'status(1)
+        ElseIf kursi(37) = False Then
+            H3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(37) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub H4_Click(sender As Object, e As EventArgs) Handles H4.Click
+        If Kursi(38) = True Then
+            H4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(38) = False
+            'status(1)
+        ElseIf kursi(38) = False Then
+            H4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(38) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub H5_Click(sender As Object, e As EventArgs) Handles H5.Click
+        If Kursi(39) = True Then
+            H5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(39) = False
+            'status(1)
+        ElseIf kursi(39) = False Then
+            H5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(39) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub I1_Click(sender As Object, e As EventArgs) Handles I1.Click
+        If Kursi(40) = True Then
+            I1.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(40) = False
+            'status(1)
+        ElseIf kursi(40) = False Then
+            I1.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(40) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub I2_Click(sender As Object, e As EventArgs) Handles I2.Click
+        If Kursi(41) = True Then
+            I2.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(41) = False
+            'status(1)
+        ElseIf kursi(41) = False Then
+            I2.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(41) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub I3_Click(sender As Object, e As EventArgs) Handles I3.Click
+        If Kursi(42) = True Then
+            I3.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(42) = False
+            'status(1)
+        ElseIf kursi(42) = False Then
+            I3.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(42) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub I4_Click(sender As Object, e As EventArgs) Handles I4.Click
+        If Kursi(43) = True Then
+            I4.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(43) = False
+            'status(1)
+        ElseIf kursi(43) = False Then
+            I4.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(43) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
+    Private Sub I5_Click(sender As Object, e As EventArgs) Handles I5.Click
+        If Kursi(44) = True Then
+            I5.BackColor = Color.Yellow
+            JTiket += 1
+            Kursi(44) = False
+            'status(1)
+        ElseIf kursi(44) = False Then
+            I5.BackColor = Color.LimeGreen
+            JTiket -= 1
+            Kursi(44) = True
+        End If
+        HTiket = JTiket * Form2.hargatiket
+        Jumlah_Tiket.Text = JTiket
+        Total_Harga.Text = "IDR " + HTiket.ToString + ".000"
+    End Sub
+
     Private Sub BtnNext_Click(sender As Object, e As EventArgs) Handles BtnNext.Click
         Form4.Show()
         Me.Hide()

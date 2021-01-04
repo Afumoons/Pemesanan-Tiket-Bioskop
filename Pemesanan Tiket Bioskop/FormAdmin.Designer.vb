@@ -24,6 +24,7 @@ Partial Class FormAdmin
     Private Sub InitializeComponent()
         Me.BtnTambahFilm = New System.Windows.Forms.Button()
         Me.BtnTambahStudio = New System.Windows.Forms.Button()
+        Me.BtnLaporan = New System.Windows.Forms.Button()
         Me.SuspendLayout()
         '
         'BtnTambahFilm
@@ -40,15 +41,25 @@ Partial Class FormAdmin
         Me.BtnTambahStudio.Location = New System.Drawing.Point(248, 33)
         Me.BtnTambahStudio.Name = "BtnTambahStudio"
         Me.BtnTambahStudio.Size = New System.Drawing.Size(89, 23)
-        Me.BtnTambahStudio.TabIndex = 1
+        Me.BtnTambahStudio.TabIndex = 2
         Me.BtnTambahStudio.Text = "Tambah Studio"
         Me.BtnTambahStudio.UseVisualStyleBackColor = True
+        '
+        'BtnLaporan
+        '
+        Me.BtnLaporan.Location = New System.Drawing.Point(144, 33)
+        Me.BtnLaporan.Name = "BtnLaporan"
+        Me.BtnLaporan.Size = New System.Drawing.Size(88, 23)
+        Me.BtnLaporan.TabIndex = 1
+        Me.BtnLaporan.Text = "Laporan Tiket"
+        Me.BtnLaporan.UseVisualStyleBackColor = True
         '
         'FormAdmin
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.ClientSize = New System.Drawing.Size(381, 103)
+        Me.Controls.Add(Me.BtnLaporan)
         Me.Controls.Add(Me.BtnTambahStudio)
         Me.Controls.Add(Me.BtnTambahFilm)
         Me.Name = "FormAdmin"
@@ -59,4 +70,5 @@ Partial Class FormAdmin
 
     Friend WithEvents BtnTambahFilm As Button
     Friend WithEvents BtnTambahStudio As Button
+    Friend WithEvents BtnLaporan As Button
 End Class
